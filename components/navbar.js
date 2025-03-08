@@ -35,7 +35,7 @@ export default function Navbar(props) {
                       <span className="block text-center">Odds-API</span>
                     )}
                   </Link>
-                  <Link href="/blog" className="hidden w-[80px] dark:block">
+                  <Link href="/blog" className="hidden w-[70px] dark:block">
                     {props.logoalt ? (
                       <Image
                         {...urlForImage(props.logoalt)}
