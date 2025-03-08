@@ -1,0 +1,52 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "none"
+    }
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noImplicitAnyLet": "warn"
+      },
+      "performance": {
+        "noDelete": "warn",
+        "noAccumulatingSpread": "warn"
+      },
+      "complexity": {
+        "useOptionalChain": {
+          "fix": "safe",
+          "level": "warn"
+        }
+      },
+      "style": {
+        "useImportType": {
+          "fix": "safe",
+          "level": "warn"
+        },
+        "useTemplate": {
+          "fix": "safe",
+          "level": "warn"
+        }
+      },
+      "a11y": {
+        "all": false
+      }
+    }
+  },
+  "files": {
+    "ignore": ["./**/build/**/*", "./**/dist/**/*", "package.json", "package-lock.json"]
+  }
+}
