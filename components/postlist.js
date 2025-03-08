@@ -31,7 +31,7 @@ export default function PostList({
               aspect === 'landscape'
                 ? 'aspect-video'
                 : aspect === 'custom'
-                  ? 'aspect-[5/4]'
+                  ? 'aspect-5/4'
                   : 'aspect-square'
             )}
             href={`/blog/${pathPrefix ? `${pathPrefix}/` : ''}${post.slug.current}`}
@@ -40,7 +40,7 @@ export default function PostList({
               <Image
                 src={imageProps.src}
                 {...(post.mainImage.blurDataURL && {
-                  placeholder: 'blur',
+                  placeholder: 'blur-sm',
                   blurDataURL: post.mainImage.blurDataURL
                 })}
                 alt={post.mainImage.alt || 'Thumbnail'}
@@ -71,7 +71,7 @@ export default function PostList({
             >
               <Link href={`/blog/${pathPrefix ? `${pathPrefix}/` : ''}${post.slug.current}`}>
                 <span
-                  className="bg-gradient-to-r from-green-200 to-green-100 bg-[length:0px_10px] bg-left-bottom
+                  className="bg-linear-to-r from-green-200 to-green-100 bg-[length:0px_10px] bg-left-bottom
       bg-no-repeat
       transition-[background-size]
       duration-500
@@ -96,7 +96,7 @@ export default function PostList({
 
             <div className="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400">
               <div className="flex items-center gap-3">
-                <div className="relative h-5 w-5 flex-shrink-0">
+                <div className="relative h-5 w-5 shrink-0">
                   {post?.author?.image && (
                     <Image
                       src={AuthorimageProps.src}

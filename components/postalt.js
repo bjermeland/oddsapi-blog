@@ -28,7 +28,7 @@ export default function PostAlt({ post, aspect, preloadImage, featured = false }
               <Image
                 src={imageProps.src}
                 {...(post.mainImage.blurDataURL && {
-                  placeholder: 'blur',
+                  placeholder: 'blur-sm',
                   blurDataURL: post.mainImage.blurDataURL
                 })}
                 alt={post.mainImage.alt || 'Thumbnail'}
@@ -60,7 +60,7 @@ export default function PostAlt({ post, aspect, preloadImage, featured = false }
           >
             <Link href={`/blog/minimal/${post.slug.current}`}>
               <span
-                className="bg-gradient-to-r from-black to-black dark:from-white dark:to-white
+                className="bg-linear-to-r from-black to-black dark:from-white dark:to-white
         bg-[length:0px_2px]
         bg-left-bottom
         bg-no-repeat

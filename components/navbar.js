@@ -12,14 +12,14 @@ export default function Navbar(props) {
       <nav>
         <Disclosure>
           {({ open }) => (
-            <>
+            <div>
               <div className="relative flex flex-wrap items-center justify-center md:flex-nowrap md:gap-10">
                 <div className="absolute left-0 hidden sm:block">
                   <a
-                    href="https://www.oddsnotifier.io/dashboard"
-                    className="px-4 py-2 text-xs font-bold text-white uppercase bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+                    href="https://odds-api.io"
+                    className="px-4 py-2 text-xs font-bold text-white uppercase hover:rounded-xl transition-all ease-in-out mt-8 text-center bgGradient rounded-md text-foreground"
                   >
-                    Try Out OddsNotifier
+                    Try Out Odds-API.io
                   </a>
                 </div>
                 <div>
@@ -49,7 +49,7 @@ export default function Navbar(props) {
                   </Link>
                 </div>
               </div>
-            </>
+            </div>
           )}
         </Disclosure>
       </nav>

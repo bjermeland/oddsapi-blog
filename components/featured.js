@@ -21,7 +21,7 @@ export default function Featured({ post, pathPrefix }) {
             <Image
               src={imageProps.src}
               {...(post.mainImage.blurDataURL && {
-                placeholder: 'blur',
+                placeholder: 'blur-sm',
                 blurDataURL: post.mainImage.blurDataURL
               })}
               alt={post.mainImage?.alt || 'Thumbnail'}
@@ -44,7 +44,7 @@ export default function Featured({ post, pathPrefix }) {
             <div className="flex mt-4 space-x-3 text-gray-500 md:mt-8 ">
               <div className="flex flex-col gap-3 md:items-center md:flex-row">
                 <div className="flex items-center gap-3">
-                  <div className="relative flex-shrink-0 w-5 h-5">
+                  <div className="relative shrink-0 w-5 h-5">
                     {AuthorimageProps && (
                       <Image
                         src={AuthorimageProps.src}
