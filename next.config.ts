@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true,
-    remotePatterns: [{ hostname: 'cdn.sanity.io' }]
-    // path: 'https://oddsnotifier-blog.vercel.app/_next/image'
+    remotePatterns: [{ hostname: 'cdn.sanity.io' }],
+    path: 'https://oddsapi-blog.vercel.app/_next/image'
   },
   typescript: {
     // Set this to false if you want production builds to abort if there's type errors
@@ -14,8 +14,8 @@ const nextConfig = {
   eslint: {
     /// Set this to false if you want production builds to abort if there's lint errors
     ignoreDuringBuilds: process.env.VERCEL_ENV === 'production'
-  }
-  // assetPrefix: 'https://oddsnotifier-blog.vercel.app'
+  },
+  assetPrefix: 'https://oddsapi-blog.vercel.app'
 }
 
 module.exports = nextConfig
