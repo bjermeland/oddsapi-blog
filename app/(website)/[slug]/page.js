@@ -7,13 +7,13 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const post = await getPostBySlug(params.slug)
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
   return { title: post.title, description: post.excerpt }
 }
 
 export default async function PostDefault({ params }) {
-  const post = await getPostBySlug(params.slug)
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
   return <PostPage post={post} />
 }
-
-// export const revalidate = 60;

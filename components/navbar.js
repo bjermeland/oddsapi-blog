@@ -29,22 +29,22 @@ export default function Navbar(props) {
                         {...urlForImage(props.logo)}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 340px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">OddsNotifier</span>
+                      <span className="block text-center">Odds-API</span>
                     )}
                   </Link>
-                  <Link href="/blog" className="hidden w-[200px] dark:block">
+                  <Link href="/blog" className="hidden w-[80px] dark:block">
                     {props.logoalt ? (
                       <Image
                         {...urlForImage(props.logoalt)}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 700px) 100vw, 200px"
+                        sizes="(max-width: 300px) 50vw, 100px"
                       />
                     ) : (
-                      <span className="block text-center">OddsNotifier</span>
+                      <span className="block text-center">Odds-API</span>
                     )}
                   </Link>
                 </div>

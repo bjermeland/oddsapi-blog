@@ -10,12 +10,12 @@ async function sharedMetaData(params) {
     // enable this for resolving opengraph image
     // metadataBase: new URL(settings.url),
     title: {
-      default: settings?.title || 'OddsNotifier Blog - The most effective sports betting strategy',
-      template: '%s | OddsNotifier'
+      default: settings?.title || 'Odds-API Blog | Live Sports & Betting Data Insights',
+      template: '%s | Odds-API'
     },
     description: settings?.description || 'The most effective sports betting strategy',
-    keywords: ['Value Betting', 'Odds Notifier', 'Sports Betting'],
-    authors: [{ name: 'Warren' }],
+    keywords: ['Odds API', 'Sports Odds API', 'Sports Betting API'],
+    authors: [{ name: 'Markus' }],
     canonical: settings?.url,
     openGraph: {
       images: [
@@ -27,7 +27,7 @@ async function sharedMetaData(params) {
       ]
     },
     twitter: {
-      title: settings?.title || 'OddsNotifier Blog',
+      title: settings?.title || 'Odds-API Blog',
       card: 'summary_large_image'
     },
     robots: {

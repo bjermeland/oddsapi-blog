@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://odds-api.io/blog
+
+# Sitemaps
+Sitemap: https://odds-api.io/blog/sitemap.xml

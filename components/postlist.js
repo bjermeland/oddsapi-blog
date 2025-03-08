@@ -44,7 +44,7 @@ export default function PostList({
                   blurDataURL: post.mainImage.blurDataURL
                 })}
                 alt={post.mainImage.alt || 'Thumbnail'}
-                priority={preloadImage ? true : false}
+                priority={!!preloadImage}
                 className="object-cover transition-all"
                 fill
                 sizes="(max-width: 768px) 30vw, 33vw"
@@ -97,7 +97,7 @@ export default function PostList({
             <div className="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400">
               <div className="flex items-center gap-3">
                 <div className="relative h-5 w-5 shrink-0">
-                  {post?.author?.image && (
+                  {/* {post?.author?.image && (
                     <Image
                       src={AuthorimageProps.src}
                       alt={post?.author?.name}
@@ -105,7 +105,7 @@ export default function PostList({
                       fill
                       sizes="20px"
                     />
-                  )}
+                  )} */}
                 </div>
                 <span className="truncate text-sm">{post?.author?.name}</span>
               </div>
