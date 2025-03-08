@@ -20,8 +20,6 @@ export default function Post(props) {
 
   const imageProps = post?.mainImage ? urlForImage(post?.mainImage) : null
 
-  console.log(post)
-
   const AuthorimageProps = post?.author?.image ? urlForImage(post.author.image) : null
 
   return (
